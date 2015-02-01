@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricketApp", "CricketApp\CricketApp.csproj", "{D413E873-8C2F-4F33-AC71-959B06C78191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CricketApp.Tests", "CricketApp.Tests\CricketApp.Tests.csproj", "{F8E29A81-674E-42E3-89FE-837CEEF805BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D413E873-8C2F-4F33-AC71-959B06C78191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D413E873-8C2F-4F33-AC71-959B06C78191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D413E873-8C2F-4F33-AC71-959B06C78191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D413E873-8C2F-4F33-AC71-959B06C78191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E29A81-674E-42E3-89FE-837CEEF805BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E29A81-674E-42E3-89FE-837CEEF805BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E29A81-674E-42E3-89FE-837CEEF805BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E29A81-674E-42E3-89FE-837CEEF805BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

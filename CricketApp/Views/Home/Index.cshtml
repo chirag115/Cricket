@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Cricket App";
+}
+<h2>@ViewBag.Message</h2>
+<p>
+    To Know latest news about the world of cricket please visit my all pages.
+</p>
+<ul data-role="listview" data-inset="true">
+    <li data-role="list-divider">Navigation</li>
+    <li>@Html.ActionLink("Match List", "Match", "Home")</li>
+    <li>@Html.ActionLink("Latest News", "News", "Home")</li>
+    <li>@Html.ActionLink("Ongoing Series", "Series", "Home")</li>
+    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+</ul>

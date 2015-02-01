@@ -1,0 +1,55 @@
+﻿@{
+    ViewBag.Title = "Match List";
+}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var title = [];
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: "https://pipes.yahoo.com/pipes/pipe.run?_id=336e9415fcc9705a78cc135ff436d7fc&_render=json",
+            dataType: "json",
+            success: function (result) {
+
+                for (var i = 1; i < 3; i++) {
+
+                    title = result.value.items[0].div.table[i].tbody.tr.td[i].a.content;
+
+                    //                    desc = result.value.items[i].description;
+                    //                    pubDate = result.value.items[i].pubDate;
+                    //                    if (result.value.items[i].hasOwnProperty('media:thumbnail')) {
+                    //                        img = result.value.items[i]['media:thumbnail'][1].url;
+                    //                        $('.news-img-' + i).attr("src", img);
+
+                    //                    }
+                    //                    else if (result.value.items[i].hasOwnProperty('image')) {
+                    //                        img = result.value.items[i].image.url;
+                    //                        $('.news-img-' + i).attr("src", img);
+
+                    //                    }
+                    //                    else if (result.value.items[i].hasOwnProperty('enclosure')) {
+                    //                        img = result.value.items[i].enclosure.url;
+                    //                        $('.news-img-' + i).attr("src", img);
+
+                    //                    }
+                    $('.match-list-' + i).html(title);
+                    //                    $('.news-date-' + i).html(pubDate);
+                    //                    $('.news-desc-' + i).html(desc);
+
+
+                }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("Error: " + errorThrown);
+            }
+        });
+    });
+</script>
+
+<ul data-role="listview"  data-inset="true">
+            <li data-role="list-divider">Match List</li>
+    @for (var i = 0; i < 3; i++)
+    {       
+            <li><a href="#match-list" class="match-list-@i"></a></li>  
+    }
+     </ul>
